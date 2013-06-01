@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+<head>
+<title>Encjaki [{systemVersion}]</title>
+<meta name="robots" content="index, follow" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/register.css" />
+<script type="text/javascript" src="../common/js/jquery.js"></script>
+<script type="text/javascript" src="../common/js/mask.js"></script>
+<script type='text/javascript'>
+
+jQuery().ready(function(){
+  
+  var offset = $('#rightMenu').offset();
+   
+   if ($('#rightMenu').height() > $('#content').height()) {
+    $('#footer').css('top',offset.top + $('#rightMenu').height() + 13);
+   }else {
+    $('#footer').css('top',offset.top + $('#content').height() + 13);
+   }
+   $('#footer').css('width',$('#contentDiv').width() - 4);
+  
+  $().mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+  }); 
+});
+
+</script>
+</head>
+<body>
+<center>
+<div id="contentDiv">
+<h1 onclick="document.location='?module=empty';" style="cursor: pointer;">Encjaki - Symulator ewolucji</h1>
+<div id="header">{header}</div>
+<div id="rightMenu">
+{loginBox}
+<h1>Linki</h1>
+<div id='links'>{linksBox}</div>
+</div>
+<div id="content">{content}</div>
+<div id='footer'>{footer}</div>
+</div>
+</center>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=4944643; 
+var sc_invisible=1; 
+var sc_partition=57; 
+var sc_click_stat=1; 
+var sc_security="494eed09"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div
+class="statcounter"><a title="wordpress com stats plugin"
+class="statcounter"
+href="http://www.statcounter.com/wordpress.com/"><img
+class="statcounter"
+src="http://c.statcounter.com/4944643/0/494eed09/1/"
+alt="wordpress com stats plugin" /></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

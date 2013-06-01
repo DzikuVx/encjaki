@@ -1,0 +1,104 @@
+@CHARSET "UTF-8";
+
+body {
+  background-image:url('../../common/gfx/pageGradient.png');
+  background-repeat:repeat-x;
+  font-family: Verdana;
+  font-size: 0.75em;
+  background-color: #BCBCBC;
+}
+
+#contentDiv h1 {
+  font-size: 3em;
+  font-family: Tahoma;
+  color: #00327A;
+  background-color: #ffffff;
+  padding: 8px;
+  margin-bottom: 1px;
+  margin-top: 6px;
+}
+
+#contentDiv {
+  width: 800px;
+  text-align: justify;
+}
+
+#header {
+  background-color: #CCCCFF;
+  margin-bottom: 1px;
+  padding: 6px;
+}
+
+#footer p ,
+#header p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+  
+#rightMenu {
+  width: 180px;
+  float: right;
+  background-color: #ffffff;
+  padding: 6px;
+}
+
+#rightMenu h1 {
+  font-size: 1.5em;
+  padding: 1px;
+  color: #00327A;
+  background-color: #ffffff;
+}
+
+#footer {
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 2px;
+  position: absolute;
+}
+
+#content {
+  background-color: #ffffff;
+  width: 595px;
+  padding: 6px;
+  margin-bottom: 1px;
+}
+
+div.newsContent {
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 6px;
+  border: solid;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  border-color: #f0f0f0;
+}
+
+div.newsText {
+  margin: 2px;
+}
+
+a.newsFollow {
+  display: block;
+  margin-top: 6px;
+}
+
+a:link, a:visited, a:active {
+  color: #00327A;
+  text-decoration: none;  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.newsTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00327A;
+}
+
+div.newsDate {
+  font-size: 0.7em;
+  color: #646464;
+}

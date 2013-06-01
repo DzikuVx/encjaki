@@ -1,0 +1,74 @@
+<h2>Załóż konto</h2>
+<form name="registerForm" method="post" action="">
+<table>
+  <tr>
+    <th>Login (użyty do logowania):</th>
+    <td>{login}</td>
+  </tr>
+  <tr>
+    <th>Nazwa:</th>
+    <td>{name}</td>
+  </tr>
+  <tr>
+    <th>E-mail:</th>
+    <td>{email}</td>
+  </tr>
+  <tr>
+    <th>Hasło:</th>
+    <td>{password1}</td>
+  </tr>
+  <tr>
+    <th>Hasło (powtórzone):</th>
+    <td>{password2}</td>
+  </tr>
+  <tr>
+    <th>Akceptuję warunki regulaminu:</th>
+    <td>{agreement}</td>
+  </tr>
+  <tr>
+    <th>Wyrażam zgodę na przetwarzanie moim danych osobowych w
+    celach marketingowych:</th>
+    <td>{process}</td>
+  </tr>
+</table>
+<input type="hidden" name="module" value="registerUser" /> <input
+  type="hidden" name="method" value="registerExecute" /> <input
+  type="button" value="Dalej" onclick="registerFormCheck();" /></form>
+<script type='text/javascript'>
+<!-- 
+
+function checkPasswordComplexity(password) {
+  
+  var retVal = '';
+  
+  if (password.length < 6) {
+    retVal = retVal + ' - minimalna długośc nowego hasła to 6 znaków \n';
+  }
+    
+  return retVal;
+}
+
+function registerFormCheck() {
+  
+  var errorLog = '';
+
+  if (!$('[name=Agreement]').attr('checked')) {
+    errorLog = errorLog + " - musisz zaakceptować regulamin \n";
+  }
+  
+  var passwordString = $('[name=Password1]').val();
+  errorLog = errorLog + checkPasswordComplexity(passwordString);
+
+  if ($('[name=Password1]').val() != $('[name=Password2]').val()) {
+    errorLog = errorLog + " - podane hasła różnią się od siebie \n";
+  }
+
+  if (errorLog == '') {
+    document.forms.registerForm.submit();
+  }else {
+    alert(errorLog);
+  }
+}
+
+-->
+</script>

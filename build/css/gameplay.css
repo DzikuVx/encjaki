@@ -1,0 +1,192 @@
+@CHARSET "UTF-8";
+
+div.header {
+	font-family: helvetica, arial, sans-serif;
+	background-color: #353535;
+	margin: 0;
+	padding: 1em;
+	padding-bottom: 0.5em;
+	vertical-align: bottom;
+	text-shadow: black 0.1em 0.1em 0.1em;
+	font-stretch: wider;
+}
+
+div.header span.name {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+div.header span.menu {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 10pt;
+	margin-left: 2em;
+}
+
+div.header span.menu a {
+	margin-right: 1.5em;
+}
+
+div.header span.menu a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+div.content {
+	margin: 0.5em;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: Tahoma;
+	font-size: 9pt;
+	padding: 0;
+	margin: 0;
+}
+
+table.map {
+	font-family: helvetica, arial, sans-serif;
+	border-collapse: 1px;
+	border: none;
+}
+
+table.map tbody tr th {
+	
+}
+
+table.map tbody tr td {
+	background-color: #353535;
+	color: #eee;
+	width: 35px;
+	height: 35px;
+	font-size: 8pt;
+	cursor: pointer;
+	text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+div.floatPanel {
+	position: absolute;
+	display: none;
+	width: 420px;
+	background-color: #ffffff;
+	background-image: url('../gfx/pageGradient.png');
+	background-repeat: repeat-x;
+	font-family: Tahoma;
+	font-size: 9pt;
+	border: solid;
+	border-width: 1px;
+	border-color: #A09F9B;
+	padding: 3px;
+}
+
+div.floatPanel h1 {
+	font-size: 11pt;
+}
+
+div.floatPanel h2 {
+	font-size: 10pt;
+}
+
+div.floatPanel table,table.statistics {
+	font-size: 9pt;
+	width: 100%;
+	font-family: helvetica, arial, sans-serif;
+}
+
+div.floatPanel table thead th,table.statistics thead th {
+	text-align: left;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #707070;
+	padding: 2px;
+	text-shadow: #333 0.1em 0.1em 0.2em;
+}
+
+div.floatPanel table tbody th,table.statistics tbody th {
+	text-align: left;
+	color: #ffffff;
+	background-color: #707070;
+	padding: 2px;
+	width: 40%;
+	text-shadow: #333 0.1em 0.1em 0.2em;
+}
+
+div.floatPanel table tbody td,table.statistics tbody td {
+	text-align: left;
+	padding: 2px;
+	background-color: #fafafa;
+	text-shadow: #aaa 0.1em 0.1em 0.2em;
+}
+
+img.closer {
+	float: right;
+	cursor: pointer;
+	margin-top: 6px;
+	margin-right: 2px;
+}
+
+img.link {
+	cursor: pointer;
+	border: none;
+	padding: 3px;
+	margin: 3px;
+}
+
+.formButton {
+	font-family: Tahoma;
+	font-size: 9pt;
+	color: #ffffff;
+	background-color: #27577A;
+	border: solid;
+	border-width: 1px;
+	border-left-color: #c0c0c0;
+	border-right-color: #707070;
+	border-top-color: #c0c0c0;
+	border-bottom-color: #707070;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 5px;
+	cursor: pointer;
+	background-image: url('../gfx/buttonGradient.png');
+	background-repeat: repeat-x;
+}
+
+.learnHigh {
+	background-color: #00ff00 !important;
+}
+
+.learnMed {
+	background-color: #ffff00 !important;
+}
+
+.learnLow {
+	background-color: #ff0000 !important;
+}
+
+table.decision {
+	
+}
+
+table.decision td {
+	width: 33%;
+}
+
+table.decision th {
+	width: 33% !important;
+	height: 30px;
+	text-align: center !important;
+	background-color: #707070;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+#simplemodal-overlay {
+	background-color: #646464;
+	cursor: wait;
+}

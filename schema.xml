@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="encjaki" defaultIdMethod="native">
+  <table name="news" phpName="DbNews">
+    <column name="NewsID" type="bigint" required="true" primaryKey="true" autoIncrement="true"/>
+    <column name="UserID" type="bigint" required="true" />
+    <column name="ctime__" type="timestamp" />
+    <column name="Title" type="varchar" size="255" required="true" />
+    <column name="Text" type="CLOB" required="true"/>
+    <column name="Published" type="BOOLEAN" required="true" defaultValue="false" />
+    <column name="Type" type="varchar" size="32" required="true" defaultValue="normal" />
+    <column name="Language" type="char" size="2" required="true" defaultValue="pl" />
+    <foreign-key foreignTable="user" phpName="DbUser" refPhpName="DbNews">
+      <reference local="UserID" foreign="UserID"/>
+    </foreign-key>
+  </table>
+  <table name="link" phpName="DbLink">
+   <column name="LinkID" type="bigint" required="true" primaryKey="true" autoIncrement="true"/>
+   <column name="Language" type="char" size="2" required="true" defaultValue="pl" />
+   <column name="Name" type="varchar" size="255" required="true" />
+   <column name="Link" type="varchar" size="255" required="true" />
+  </table>
+  <table name="user" phpName="DbUser">
+  <column name="UserID" type="bigint" required="true" primaryKey="true" autoIncrement="true"/>
+  <column name="Login" type="varchar" size="255" required="true" />
+  <column name="Name" type="varchar" size="255" required="true" />
+  <column name="Password" type="varchar" size="255" required="true" />
+  <column name="Locked" type="boolean" required="true" defaultValue="false" />
+  <column name="ctime__" type="timestamp" />
+  </table>
+    <table name="statistics" phpName="DbStatistics">
+    <column name="StatisticsID" type="bigint" primaryKey="true" autoIncrement="true" required="true" />
+    <column name="UserID" type="bigint" required="true" />
+  	<column name="ByClass" type="varchar" size="24" />
+  	<column name="Turn" type="integer" required="true" />
+  	<column name="Population" type="integer" size="24" /> 
+  	<column name="Parameter" type="varchar" size="32" />
+  	<column name="Value" type="integer" required="true" />
+    <foreign-key foreignTable="user" phpName="DbUser" refPhpName="DbNews">
+      <reference local="UserID" foreign="UserID"/>
+    </foreign-key>
+  </table>
+</database>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+<head>
+<title>Encjaki</title>
+<meta name="robots" content="index, follow" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/gameplay.css" />
+<script type="text/javascript" src="js/gameplay.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.simplemodal.js"></script>
+
+<script type='text/javascript'>
+
+jQuery().ready(function(){
+  
+	$(document).mousemove(function(e) {
+		mouseX = e.pageX;
+		mouseY = e.pageY;
+	});
+	
+});
+
+var loggedUserID={loggedUserID};
+</script>
+</head>
+<body>
+
+<div class="header">
+<span class="name">Encjaki</span>
+<span class="menu">
+<a onclick="document.location.reload();">Następny cykl</a>
+<a>Twórz wzorzec</a>
+<a>Nowy wzorzec</a>
+<a onclick="executeSimpleGet('lifeForm','sLearnAll',10,false,'#univPanel', 'modal');">Ucz wzorcem</a>
+<a onclick="executeSimpleGet('lifeForm','sZeroAllNeuralNetworks',null,false,null);">Kasuj mózgi</a>
+<a onclick="executeSimpleGet('parcel','sSetMaxFood',null,true);">Wygeneruj pożywienie</a>
+<a style="float: right; margin-top: 0.5em;" onclick="Controller.logout()">Zamknij</a>
+</span>
+</div>
+
+<div class="content">
+
+<div style="float: left;">{statisticsTable}</div>
+
+<div style="float: right">{parcelMap}</div>
+
+<div>{populationChart}</div>
+<div>{foodProductionChart}</div>
+<div>{avaibleFoodChart}</div>
+
+{controlButtons}
+
+</div>
+<div class="floatPanel" id="parcelPanel"><img src="gfx/close.gif"
+  class="closer" onclick="$('#parcelPanel').hide();" title="Zamknij" />
+<div></div>
+</div>
+
+<div class="floatPanel" id="lifeFormPanel"><img src="gfx/close.gif"
+  class="closer" onclick="$('#lifeFormPanel').hide();" title="Zamknij" />
+<div></div>
+</div>
+
+<div class="floatPanel" id="univPanel"><img src="gfx/close.gif"
+  class="closer" onclick="$('#univPanel').hide();" title="Zamknij" />
+<div></div>
+</div>
+
+</body>
+</html>
